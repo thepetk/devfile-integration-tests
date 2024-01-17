@@ -12,10 +12,10 @@ jobs:
   build:
     name: Run Tests
     strategy:
+      fail-fast: true
       matrix:
         os: [ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
-    continue-on-error: true
     timeout-minutes: 20
 
     steps:
