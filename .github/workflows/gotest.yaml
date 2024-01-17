@@ -7,7 +7,7 @@ on:
     branches: [main]
   schedule:
     # every day at 9am EST
-    - cron: 0 1 * * *
+    - cron: "*/30 * * * *"
 jobs:
   build:
     name: Run Tests
